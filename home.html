@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eric Zhao - Portfolio Home</title>
+    <link rel="stylesheet" href="homeStyle.css">
+    <script type="text/javascript">
+        document.addEventListener('DOMContentLoaded', function() {
+          const hamburger = document.getElementById("hamburger")
+          hamburger.addEventListener("click", toggleMenu)
+        }) 
+        function toggleMenu(){
+          const navigation = document.getElementById("main-nav")
+          navigation.classList.toggle("show")
+        }
+      </script>
+</head>
+<body>
+    <header>
+        <h2>Eric Zhao</h2>
+        <span class="mobile-menu" id="hamburger">&#8801;</span>
+        <nav id="main-nav">
+            <ul class="menu">
+                <li><a href="./home.html">Home</a></li>
+                <li><a href="https://drive.google.com/file/d/1AMB4tWfkt0U2uTyfDkwm6OASvQaEMwry/view?usp=sharing" target="_blank">Resume</a></li>
+                <li><a href="https://github.com/ericzhao05" target="_blank">GitHub</a></li>
+                <li><a href="https://www.linkedin.com/in/eric-zhao-142b6523a/" target="_blank">LinkedIn</a></li>
+                <li><a href="./projects/project.html">Projects</a></li>
+                <li><a href="./Contact/contact.html">My Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Home</h1>
+        <div class="content-container">
+            <div class="left-column">
+                <div class="my-pic">
+                    <img src="./img/EricZhaoHeadshot.jpg" alt="Picture of myself">
+                </div>
+            </div>
+            
+            <div class="right-column">
+                <div class="my-description">
+                    <h2>Short Description about me</h2>
+                    <p>
+                        My name is Eric Zhao. 
+                        I was born and raised in Italy and come from a Chinese background. 
+                        I am currently an undergraduate student majoring in Computer Science 
+                        and minoring in Game Engineering at NYU Tandon School of Engineering.
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="skill-container">
+            <h2>Skill Sets</h2>
+            <div class="skill-item">
+                <h3>Python</h3>
+                <img src="./img/PythonLogoPS.png" />
+                <p>Numpy / Pytorch / Pandas</p>
+            </div>
+            <div class="skill-item">
+                <h3>C++</h3>
+                <img src="./img/C++LogoPS.png" />
+                <p>OOP / GameDev</p>
+            </div>
+            <div class="skill-item">
+                <h3>WebDev</h3>
+                <img src="./img/WebDevLogo.png" />
+                <p>HTML CSS Javascript</p>
+            </div>
+            <div class="skill-item">
+                <h3>Database</h3>
+                <img src="./img/DatabaseLogo.png" />
+                <p>MySQL</p>
+            </div>
+        </div>
+    <main>
+</body>
+</html>

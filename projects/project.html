@@ -5,143 +5,155 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eric Zhao - Projects</title>
     <link rel="stylesheet" href="projectsStyle.css">
+    <script type="text/javascript">
+        document.addEventListener('DOMContentLoaded', function() {
+          const hamburger = document.getElementById("hamburger")
+          hamburger.addEventListener("click", toggleMenu)
+        }) 
+        function toggleMenu(){
+          const navigation = document.getElementById("main-nav")
+          navigation.classList.toggle("show")
+        }
+      </script>
 </head>
 <body>
     <header>
-        <div class="header-content">
-            <h2>Eric Zhao</h2>
-            <nav>
-                <a href="../home/home.html">Home</a>
-                <a href="../resume/resume.html">Resume</a>
-                <a href="https://github.com/ericzhao05" target="_blank">GitHub</a>
-                <a href="../projects/project.html">Projects</a>
-                <a href="../contact/contact.html">My Contact</a>
-            </nav>
-        </div>
+        <h2>Eric Zhao</h2>
+        <span class="mobile-menu" id="hamburger">&#8801;</span>
+        <nav id="main-nav">
+            <ul class="menu">
+                <li><a href="../home.html">Home</a></li>
+                <li><a href="https://drive.google.com/file/d/1AMB4tWfkt0U2uTyfDkwm6OASvQaEMwry/view?usp=sharing" target="_blank">Resume</a></li>
+                <li><a href="https://github.com/ericzhao05" target="_blank">GitHub</a></li>
+                <li><a href="https://www.linkedin.com/in/eric-zhao-142b6523a/" target="_blank">LinkedIn</a></li>
+                <li><a href="./project.html">Projects</a></li>
+                <li><a href="../contact/contact.html">My Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main>
         <h1>Projects</h1>
         
-        <section class="project-section">
-            <h2>Project 1 Name</h2>
-            <div class="project-container" id="project1Container">
-                <!-- This container is for dynamic content -->
-                <div class="project-description">Project 1 detailed description will go here. This could include technologies used, your role, and the project's purpose.</div>
-            </div>
+        <!-- The all-projects-container will contain all the single project containers -->
+        <div class="all-projects-container">
             
-            <div class="project-items">
-                <div class="project-item">
-                    <div class="project-content">
-                        <h3>Feature 1</h3>
-                        <p>Content: image, text, etc.</p>
-                        <img src="placeholder-project.jpg" alt="Project screenshot">
+            <!-- The single-project-container will contain a single project in it and all the project aspects -->
+            <div class="single-project-container">
+                <h2>Project 1 Name</h2>
+                <p>Description of the project: Lorem ipsum odor amet, consectetuer adipiscing elit. Parturient tellus ante varius gravida pretium libero.</p>
+                <div class="project-characteristics">
+                    <!-- Modified structure for each project item to separate content and image -->
+                    <div class="project-item">
+                        <!-- Added this div to group the text content -->
+                        <div class="project-item-content">
+                            <h3>Feature 1</h3>
+                            <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Potenti non justo duis elementum aliquam. Cubilia orci ultrices pellentesque; augue mauris nostra turpis parturient. Arcu suspendisse commodo eget, non maecenas eleifend netus sed felis.</p>
+                        </div>
+                        <img src="./img/placeholderImage.png" alt="Place holder image">
                     </div>
-                </div>
-                
-                <div class="project-item">
-                    <div class="project-content">
-                        <h3>Feature 2</h3>
-                        <p>Content: image, text, etc.</p>
-                        <img src="placeholder-project.jpg" alt="Project screenshot">
+                    <div class="project-item">
+                        <div class="project-item-content">
+                            <h3>Feature 2</h3>
+                            <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Potenti non justo duis elementum aliquam. Cubilia orci ultrices pellentesque; augue mauris nostra turpis parturient. Arcu suspendisse commodo eget, non maecenas eleifend netus sed felis.</p>
+                        </div>
+                        <img src="./img/placeholderImage.png" alt="Place holder image">
                     </div>
-                </div>
-                
-                <div class="project-item">
-                    <div class="project-content">
-                        <h3>Feature 3</h3>
-                        <p>Content: image, text, etc.</p>
-                        <img src="placeholder-project.jpg" alt="Project screenshot">
+                    <div class="project-item">
+                        <div class="project-item-content">
+                            <h3>Feature 3</h3>
+                            <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Potenti non justo duis elementum aliquam. Cubilia orci ultrices pellentesque; augue mauris nostra turpis parturient. Arcu suspendisse commodo eget, non maecenas eleifend netus sed felis.</p>
+                        </div>
+                        <img src="./img/placeholderImage.png" alt="Place holder image">
                     </div>
-                </div>
-                
-                <div class="project-item">
-                    <div class="project-content">
-                        <h3>Feature 4</h3>
-                        <p>Content: image, text, etc.</p>
-                        <img src="placeholder-project.jpg" alt="Project screenshot">
-                    </div>
-                </div>
-            </div>
-        </section>
-        
-        <section class="project-section">
-            <h2>Project 2 Name</h2>
-            <div class="project-container" id="project2Container">
-                <!-- This container is for dynamic content -->
-                <div class="project-description">Project 2 detailed description will go here. This could include technologies used, your role, and the project's purpose.</div>
-            </div>
-            
-            <div class="project-items project-items-2">
-                <div class="project-item-2">
-                    <div class="project-content">
-                        <h3>Feature 1</h3>
-                        <p>Content: image, text, etc.</p>
-                        <img src="placeholder-project.jpg" alt="Project screenshot">
-                    </div>
-                </div>
-                
-                <div class="project-item-2">
-                    <div class="project-content">
-                        <h3>Feature 2</h3>
-                        <p>Content: image, text, etc.</p>
-                        <img src="placeholder-project.jpg" alt="Project screenshot">
-                    </div>
-                </div>
-                
-                <div class="project-item-2">
-                    <div class="project-content">
-                        <h3>Feature 3</h3>
-                        <p>Content: image, text, etc.</p>
-                        <img src="placeholder-project.jpg" alt="Project screenshot">
+                    <div class="project-item">
+                        <div class="project-item-content">
+                            <h3>Feature 4</h3>
+                            <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Potenti non justo duis elementum aliquam. Cubilia orci ultrices pellentesque; augue mauris nostra turpis parturient. Arcu suspendisse commodo eget, non maecenas eleifend netus sed felis.</p>
+                        </div>
+                        <img src="./img/placeholderImage.png" alt="Place holder image">
                     </div>
                 </div>
             </div>
-        </section>
-        
-        <section class="project-section">
-            <h2>More Project Name</h2>
-            <div class="project-container" id="moreProjectContainer">
-                <!-- This container is for dynamic content -->
-                <div class="project-description">More Project detailed description will go here. This could include technologies used, your role, and the project's purpose.</div>
-            </div>
-            
-            <div class="project-items">
-                <div class="project-item">
-                    <div class="project-content">
-                        <h3>Feature 1</h3>
-                        <p>Content: image, text, etc.</p>
-                        <img src="placeholder-project.jpg" alt="Project screenshot">
-                    </div>
-                </div>
-                
-                <div class="project-item">
-                    <div class="project-content">
-                        <h3>Feature 2</h3>
-                        <p>Content: image, text, etc.</p>
-                        <img src="placeholder-project.jpg" alt="Project screenshot">
-                    </div>
-                </div>
-                
-                <div class="project-item">
-                    <div class="project-content">
-                        <h3>Feature 3</h3>
-                        <p>Content: image, text, etc.</p>
-                        <img src="placeholder-project.jpg" alt="Project screenshot">
-                    </div>
-                </div>
-                
-                <div class="project-item">
-                    <div class="project-content">
-                        <h3>Feature 4</h3>
-                        <p>Content: image, text, etc.</p>
-                        <img src="placeholder-project.jpg" alt="Project screenshot">
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
 
-    <!-- Removed JavaScript that's no longer needed since content is directly in HTML -->
+            <!-- The single-project-container will contain a single project in it and all the project aspects -->
+            <div class="single-project-container">
+                <h2>Project 2 Name</h2>
+                <p>Description of the project: Lorem ipsum odor amet, consectetuer adipiscing elit. Parturient tellus ante varius gravida pretium libero.</p>
+                <div class="project-characteristics">
+                    <!-- Modified structure for each project item to separate content and image -->
+                    <div class="project-item">
+                        <!-- Added this div to group the text content -->
+                        <div class="project-item-content">
+                            <h3>Feature 1</h3>
+                            <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Potenti non justo duis elementum aliquam. Cubilia orci ultrices pellentesque; augue mauris nostra turpis parturient. Arcu suspendisse commodo eget, non maecenas eleifend netus sed felis.</p>
+                        </div>
+                        <img src="./img/placeholderImage.png" alt="Place holder image">
+                    </div>
+                    <div class="project-item">
+                        <div class="project-item-content">
+                            <h3>Feature 2</h3>
+                            <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Potenti non justo duis elementum aliquam. Cubilia orci ultrices pellentesque; augue mauris nostra turpis parturient. Arcu suspendisse commodo eget, non maecenas eleifend netus sed felis.</p>
+                        </div>
+                        <img src="./img/placeholderImage.png" alt="Place holder image">
+                    </div>
+                    <div class="project-item">
+                        <div class="project-item-content">
+                            <h3>Feature 3</h3>
+                            <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Potenti non justo duis elementum aliquam. Cubilia orci ultrices pellentesque; augue mauris nostra turpis parturient. Arcu suspendisse commodo eget, non maecenas eleifend netus sed felis.</p>
+                        </div>
+                        <img src="./img/placeholderImage.png" alt="Place holder image">
+                    </div>
+                    <div class="project-item">
+                        <div class="project-item-content">
+                            <h3>Feature 4</h3>
+                            <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Potenti non justo duis elementum aliquam. Cubilia orci ultrices pellentesque; augue mauris nostra turpis parturient. Arcu suspendisse commodo eget, non maecenas eleifend netus sed felis.</p>
+                        </div>
+                        <img src="./img/placeholderImage.png" alt="Place holder image">
+                    </div>
+                </div>
+            </div>
+
+            <!-- The single-project-container will contain a single project in it and all the project aspects -->
+            <div class="single-project-container">
+                <h2>Project 3 Name</h2>
+                <p>Description of the project: Lorem ipsum odor amet, consectetuer adipiscing elit. Parturient tellus ante varius gravida pretium libero.</p>
+                <div class="project-characteristics">
+                    <!-- Modified structure for each project item to separate content and image -->
+                    <div class="project-item">
+                        <!-- Added this div to group the text content -->
+                        <div class="project-item-content">
+                            <h3>Feature 1</h3>
+                            <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Potenti non justo duis elementum aliquam. Cubilia orci ultrices pellentesque; augue mauris nostra turpis parturient. Arcu suspendisse commodo eget, non maecenas eleifend netus sed felis.</p>
+                        </div>
+                        <img src="./img/placeholderImage.png" alt="Place holder image">
+                    </div>
+                    <div class="project-item">
+                        <div class="project-item-content">
+                            <h3>Feature 2</h3>
+                            <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Potenti non justo duis elementum aliquam. Cubilia orci ultrices pellentesque; augue mauris nostra turpis parturient. Arcu suspendisse commodo eget, non maecenas eleifend netus sed felis.</p>
+                        </div>
+                        <img src="./img/placeholderImage.png" alt="Place holder image">
+                    </div>
+                    <div class="project-item">
+                        <div class="project-item-content">
+                            <h3>Feature 3</h3>
+                            <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Potenti non justo duis elementum aliquam. Cubilia orci ultrices pellentesque; augue mauris nostra turpis parturient. Arcu suspendisse commodo eget, non maecenas eleifend netus sed felis.</p>
+                        </div>
+                        <img src="./img/placeholderImage.png" alt="Place holder image">
+                    </div>
+                    <div class="project-item">
+                        <div class="project-item-content">
+                            <h3>Feature 4</h3>
+                            <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Potenti non justo duis elementum aliquam. Cubilia orci ultrices pellentesque; augue mauris nostra turpis parturient. Arcu suspendisse commodo eget, non maecenas eleifend netus sed felis.</p>
+                        </div>
+                        <img src="./img/placeholderImage.png" alt="Place holder image">
+                    </div>
+                </div>
+            </div>
+
+            
+                    
+    </main>
 </body>
 </html>

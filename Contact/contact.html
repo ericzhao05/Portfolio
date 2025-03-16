@@ -5,20 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eric Zhao - Contact</title>
     <link rel="stylesheet" href="contactStyle.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-</head>
+    <script type="text/javascript">
+        document.addEventListener('DOMContentLoaded', function() {
+          const hamburger = document.getElementById("hamburger")
+          hamburger.addEventListener("click", toggleMenu)
+        }) 
+        function toggleMenu(){
+          const navigation = document.getElementById("main-nav")
+          navigation.classList.toggle("show")
+        }
+      </script>
 <body>
     <header>
-        <div class="header-content">
-            <h2>Eric Zhao</h2>
-            <nav>
-                <a href="../home/home.html">Home</a>
-                <a href="../resume/resume.html">Resume</a>
-                <a href="https://github.com/ericzhao05" target="_blank">GitHub</a>
-                <a href="../projects/project.html">Projects</a>
-                <a href="../contact/contact.html">My Contact</a>
-            </nav>
-        </div>
+        <h2>Eric Zhao</h2>
+        <span class="mobile-menu" id="hamburger">&#8801;</span>
+        <nav id="main-nav">
+            <ul class="menu">
+                <li><a href="../home.html">Home</a></li>
+                <li><a href="https://drive.google.com/file/d/1AMB4tWfkt0U2uTyfDkwm6OASvQaEMwry/view?usp=sharing" target="_blank">Resume</a></li>
+                <li><a href="https://github.com/ericzhao05" target="_blank">GitHub</a></li>
+                <li><a href="https://www.linkedin.com/in/eric-zhao-142b6523a/" target="_blank">LinkedIn</a></li>
+                <li><a href="../projects/project.html">Projects</a></li>
+                <li><a href="./contact.html">My Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main>
@@ -26,28 +36,16 @@
         
         <div class="contact-container">
             <div class="contact-left">
-                <div class="location-img">
-                    <img src="placeholder-nyc.jpg" alt="Image of NYC">
-                </div>
+                <img src="./img/nyc-skyline.jpg" alt="Image of NYC">
             </div>
             
             <div class="contact-right">
-                <p>Contact Me Through the Following Methods</p>
-                    
-                    <div class="contact-item">
-                        <i class="fas fa-globe"></i>
-                        <a href="https://github.com/ericzhao05" target="_blank">My Github</a>
-                    </div>
-                    
-                    <div class="contact-item">
-                        <i class="fas fa-envelope"></i>
-                        <p>ez2346@nyu.edu</p>
-                    </div>
-                    
-                    <div class="contact-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <p>address</p>
-                    </div>
+                <div class="contact-info">
+                    <h2>Contact Me Through the Following Methods</h2>
+                    <ul>
+                        <li>Github: <a href="https://github.com/ericzhao05" target="_blank">ericzhao05</a></li>
+                        <li>Email: ez2346@nyu.edu</li>
+                    </ul>
                 </div>
                 
                 <div class="contact-form-section">
