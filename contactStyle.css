@@ -185,8 +185,7 @@ h1 {
 }
 
 .form-group textarea:focus {
-    /* removes the white border */
-    outline: none;
+    outline: none; /* removes the white border */
     border-color: #4dabf7;
     border-width: 2.5px;
 }
